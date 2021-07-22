@@ -1,0 +1,60 @@
+/* 
+  ------------------------------------------------
+  PVII CSS Column Composer Magic
+  Copyright (c) 2011-2012 Project Seven Development
+  www.projectseven.com
+  Responsive Rules
+  ------------------------------------------------
+*/
+
+
+/*MEDIA QUERIES*/
+
+
+/*SMARTPHONE AND NARROW WINDOWS*/
+@media only screen and (min-width: 0px) and (max-width: 700px) {
+body {min-width: 0px !important;
+margin: 0px!important;}
+.p7ccm-col {
+	float: none !important;
+	width: auto !important;
+	position: static !important;
+	margin: 0px !important;
+}
+.p7ccm01-content, .p7ccm02-content, .p7ccm03-content, .p7ccm04-content, .p7ccm05-content, .p7ccm06-content {
+	padding: .5em .5em !important;
+	border: none !important;
+	height: auto !important;
+	max-height: 888678px;
+}
+.p7CCM01, .p7CCM02, .p7CCM03, .p7CCM04, .p7CCM05, .p7CCM06 {
+	min-width: 0px !important;
+	max-width: none !important;
+	width: auto !important;
+}
+.p7OPM-01 .blurb {
+	
+
+	font-size: 1.6em!important;
+	
+}
+
+
+}
+
+/*Medium Windows and Tablets*/
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+body {min-width: 0px !important;
+margin: 0px!important;}
+.p7CCM01, .p7CCM02, .p7CCM03, .p7CCM04, .p7CCM05, .p7CCM06 {
+	min-width: 0px !important;
+	max-width: none !important;
+	width: auto !important;
+}
+}
+
+/*Smartphones ONLY - Use this Query to include additional special rules for smartphones only.*/
+@media only screen and (max-device-width: 480px) {
+	
+}
+

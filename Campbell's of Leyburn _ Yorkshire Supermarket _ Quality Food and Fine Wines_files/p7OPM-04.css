@@ -1,0 +1,221 @@
+/* 
+  -----------------------------------
+  Omni Panel Magic
+  by Project Seven Development
+  www.projectseven.com
+  Style Theme: 04 - Free Tabs Light
+  -----------------------------------
+*/
+
+.p7OPM-04.p7OPM {
+	padding: 0px;
+}
+
+
+/*
+**********************************
+      PRIMARY COLOR RULES
+**********************************
+
+*/
+
+.p7OPM-04 .opm-panel-wrapper {
+	/* [disabled]background-color: #FFFFFF; */
+	/* [disabled]color: #000; */
+}
+.p7OPM-04 .opm-panel-wrapper {
+	border: 1px solid #D4E4D1;
+}
+.p7OPM-04 .opm-tabs-wrapper {
+	border: 1px solid rgba(255,255,255,1.00);
+}
+.p7OPM-04 .opm-tabs-wrapper a,
+.p7OPM-04 .opm-accordion-trig a {
+	padding: 12px 22px;
+	background-color: #9DC54B;
+	color: #333;
+	border: 1px solid #999;
+}
+
+.p7OPM-04 .opm-tabs-wrapper a:hover,
+.p7OPM-04 .opm-accordion-trig a:hover {
+	background-color: #015039;
+	color: #FFF;
+}
+
+.p7OPM-04 .opm-tabs-wrapper a.open,
+.p7OPM-04 .opm-accordion-trig a.open {
+	color: #000;
+	position: relative;
+	background-color: #FFF;
+}
+
+/*
+**********************************************
+       Curret Tab Marker (check mark)
+**********************************************
+*/
+.p7OPM-04 .opm-tabs-wrapper a.open:before {
+	left: 6px;
+	content: "";
+}
+
+/*
+******************************************************
+     Colors for Accordion Mode (Phone View)
+	-By default, colors for all modes are the 
+	 same. Use the rules below if you would like
+	 to have different colors for accordion mode.
+******************************************************
+    EXCEPTION COLORS FOR ACCORDION (PHONE) MODE
+*/
+.p7OPM-04 .opm-accordion-trig a {
+	background-color: #9DC54B;
+	color: #000;
+	border-bottom: 1px solid rgba(255,255,255,1.00);
+}
+.p7OPM-04 .opm-accordion-trig a:hover {
+	background-color: #015039;
+	color: #FFF;
+}
+.p7OPM-04 .opm-accordion-trig a.open {
+	background-color: #015039;
+	color: #FFF;
+}
+
+/*
+*********************************
+      Panel Content Rules
+*********************************
+*/
+.p7OPM-04 .opm-panel-content {
+	padding: 20px 36px;
+}
+
+
+/*
+*****************************************
+          Tabs Spacing
+    (opm-v-tabs are for Vertical Tabs)
+*****************************************	 
+*/
+.p7OPM-04 .opm-tabs-wrapper ul {
+	padding: 0px 0px 0px 0px;
+}
+
+.p7OPM-04 .opm-tabs-wrapper li {
+	padding: 6px 10px 6px 0px;
+}
+
+.p7OPM-04.opm-v-tabs .opm-tabs-wrapper ul {
+	padding: 0px 10px; 
+}
+.p7OPM-04.opm-v-tabs .opm-tabs-wrapper li {
+	padding: 0px 10px 10px 0px;
+}
+.p7OPM-04.opm-v-tabs .opm-tabs-wrapper li:last-child {
+	padding-bottom: 0px;
+}
+
+
+
+/*
+**************************
+     Rounded Corners
+**************************	 
+*/
+
+.p7OPM-04.opm-rounded .opm-panel-wrapper {
+	border-radius: 5px;
+}
+.p7OPM-04.opm-rounded .opm-tabs-wrapper a {
+	border-radius: 5px;
+}
+.p7OPM-04.opm-rounded.opm-carousel .opm-panel-wrapper,
+.p7OPM-04.opm-rounded.opm-carousel .opm-panel-wrapper {
+	border-radius: 0px;
+}
+.p7OPM-04.opm-rounded.opm-carousel {
+	border-radius: 5px;
+}
+
+
+/*
+********************************
+    Content Utility Rules 
+********************************
+*/
+
+.p7OPM-04 .blurb {
+	-webkit-transition: all ease 1.25s 0s;
+	transition: all ease 1.25s 0s;
+	-webkit-transform: translateX(90%);
+	transform: translateX(90%);
+	opacity: 0;
+	letter-spacing: .2em;
+}
+.p7OPM-04 .current-panel .blurb {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	opacity: 1;
+}
+
+
+/*
+************************
+     Carousel
+************************
+*/
+.p7OPM.opm-carousel .opm-tabs-wrapper {
+	display: none;
+}
+
+
+/*
+*************************
+    Video-Map Rules
+*************************
+*/
+.opm-video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0px;
+	overflow: hidden;
+	margin: 0px !important;
+}
+.opm-video-wrapper iframe,
+.opm-video-wrapper object,
+.opm-video-wrapper embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+
+.opm-map-wrapper {
+	position: relative; 
+	padding-bottom: 100%; 
+	padding-top: 0px; 
+	height: 0px; 
+	overflow: hidden; 
+}
+.opm-map-wrapper iframe,
+.opm-map-wrapper object,
+.opm-map-wrapper embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.opm-video-wrapper iframe,
+.opm-map-wrapper iframe {
+	box-sizing: border-box;
+}
+.opm-video-wrapper img,
+.opm-map-wrapper img {
+	border-radius: 0px !important;
+}
